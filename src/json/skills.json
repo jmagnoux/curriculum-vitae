@@ -1,0 +1,32 @@
+[
+  {
+    "category": "O.S.",
+    "data": {
+      "Linux": 80,
+      "Windows": 80,
+      "MacOs": 40
+    }
+  },
+  {
+    "category": "Langages",
+    "data": {
+      "HTML/CSS": 90,
+      "PHP": 80,
+      "JavaScript": 75,
+      "MySQL": 70,
+      "C/C++": 60,
+      "Java": 40,
+      "Swift": 40
+    }
+  },
+  {
+    "category": "Framework & Bibliothèque",
+    "data": {
+      "VueJS": 75,
+      "Element-ui": 75,
+      "CodeIgniter": 75,
+      "Slim": 65,
+      "Doctrine": 60
+    }
+  }
+]
