@@ -6,7 +6,6 @@
       fixed
       :dark="$vuetify.theme.dark"
       small
-      shaped
       color="dark"
       right
       top

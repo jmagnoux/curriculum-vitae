@@ -1,5 +1,7 @@
+const publicPath = process.env.NODE_ENV === 'production' ? '/curriculum-vitae/' : '/'
 module.exports = {
   transpileDependencies: [
-    'vuetify'
-  ]
+    'vuetify',
+  ],
+  publicPath: publicPath
 }
