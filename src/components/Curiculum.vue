@@ -9,7 +9,7 @@
       color="dark"
       right
       top
-      @click="$vuetify.theme.dark = !$vuetify.theme.dark"
+      @click="darkLight"
     >
       <v-icon :dark="$vuetify.theme.dark">
         mdi-theme-light-dark
@@ -33,6 +33,17 @@
     <timeline/>
     <hobbies/>
     <contact/>
+    <v-dialog
+      v-model="dialog"
+      transition="fab-transition"
+      width="320"
+    >
+      <v-img
+        :src="require('@/assets/les-visiteurs.gif')"
+        contain
+        height="180"
+      />
+    </v-dialog>
   </v-container>
 </template>
 
@@ -54,9 +65,18 @@ export default {
   },
 
   data: () => ({
-    fab: false
+    fab: false,
+    dialog: false,
+    count: 0
   }),
   methods: {
+    darkLight () {
+      this.$vuetify.theme.dark = !this.$vuetify.theme.dark
+      this.count++
+      if (!(this.count % 10)) {
+        this.dialog = true
+      }
+    },
     onScroll (e) {
       if (typeof window === 'undefined') return
       const top = window.pageYOffset || e.target.scrollTop || 0
@@ -85,4 +105,12 @@ export default {
       padding-bottom: 24px;
     }
   }
+
+  .za-warudo {
+    -webkit-animation: 1s linear 3.5s 2 alternate za_warudo;
+    animation: 1s linear 3.5s 2 alternate za_warudo;
+  }
+
+  @-webkit-keyframes za_warudo { from { filter:invert(0); } to { filter:invert(1); }  }
+  @keyframes za_warudo { from { filter:invert(0); } to { filter:invert(1); }  }
 </style>

@@ -1,5 +1,6 @@
 [
   {
+    "year":"2022",
     "study":false,
     "title":"Développeur web",
     "place":"Carenity, Paris, Île-de-France",
@@ -60,7 +61,6 @@
     "data3":"→ Kicad, Proteus, Java, Autonomie, Organisation."
   },
   {
-    "year":"2013",
     "study":false,
     "title":"Développeur C",
     "place":"Club robotique ENSSAT, Lannion, Côtes-d’Armor",

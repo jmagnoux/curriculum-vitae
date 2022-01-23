@@ -13,6 +13,7 @@
           <span
             class="headline font-weight-bold"
             v-text="item.year"
+            @click="counting"
           ></span>
         </template>
         <div class="py-4">
@@ -49,7 +50,21 @@ import json from '../json/timeline.json'
 export default {
   name: 'timeline',
   data: () => ({
-    timeline: json
-  })
+    timeline: json,
+    zaWarudo: 0
+  }),
+  methods: {
+    counting () {
+      this.zaWarudo++
+      if (!(this.zaWarudo % 5)) {
+        const audio = new Audio(require('@/assets/za-warudo.mp3'))
+        audio.play()
+        document.body.classList.add('za-warudo')
+        setTimeout(function () {
+          document.body.classList.remove('za-warudo')
+        }, 6000)
+      }
+    }
+  }
 }
 </script>
