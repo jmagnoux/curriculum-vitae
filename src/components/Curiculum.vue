@@ -90,6 +90,14 @@ export default {
 </script>
 
 <style lang="scss">
+  h2 {
+    &:first-child {
+      color: var(--v-primary-base);
+    }
+  }
+  .headline {
+    color: var(--v-primary-base);
+  }
   .section {
     * {
       word-break: break-word;

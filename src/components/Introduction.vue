@@ -56,6 +56,7 @@ h2 {
       1px 0 black, 0 -1px black;
     font-size: 16px;
     text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 
     * {
       height: fit-content;
