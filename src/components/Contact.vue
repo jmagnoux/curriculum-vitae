@@ -5,7 +5,7 @@
     </v-row>
     <v-row class="text-center">
       <v-col cols="12" xl="3" lg="3" md="6" sm="6">
-        <a :href="`${publicPath}assets/CV.pdf`" download>
+        <a :href="`${publicPath}CV.pdf`" download>
           <v-card
               class="pa-2"
               outlined
