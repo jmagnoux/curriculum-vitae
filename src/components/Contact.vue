@@ -18,7 +18,7 @@
               contain
               height="100"
             />
-            <p>CV papier</p>
+            <p>CV</p>
           </v-card>
         </a>
       </v-col>
