@@ -1,4 +1,5 @@
 # cv
+Please visit https://jmagnoux.github.io/curriculum-vitae to access to the published web version
 
 ## Project setup
 ```
