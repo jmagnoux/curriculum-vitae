@@ -59,7 +59,7 @@
         </a>
       </v-col>
       <v-col cols="12" xl="3" lg="3" md="6" sm="6">
-        <a href="https://www.linkedin.com/in/j%C3%A9r%C3%B4me-magnoux-a0964a138/">
+        <a href="www.linkedin.com/in/jmagnoux">
           <v-card
               class="pa-2"
               outlined
